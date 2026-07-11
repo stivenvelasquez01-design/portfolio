@@ -115,6 +115,7 @@
   // Fill in each project's real content here as it becomes available.
   const projectsData = {
     1: {
+      theme: { primary: '#1C86F2', secondary: '#0A1F45' },
       tag: 'Prueba técnica · Rediseño UX/UI',
       title: 'Rediseño UX/UI de Netelip',
       description: 'Propuesta de rediseño de la página web de Netelip desarrollada como parte de un proceso de selección. El objetivo fue modernizar la interfaz y mejorar la experiencia del usuario mediante una estructura más clara y una identidad visual renovada.',
@@ -132,7 +133,7 @@
         { heading: 'Solución', type: 'text', content: 'Diseñé una nueva interfaz con una estructura más limpia, mejor organización del contenido, una jerarquía visual clara y una identidad gráfica más consistente, priorizando la usabilidad y la experiencia del usuario.' },
         { heading: 'Resultado', type: 'text', content: 'Una propuesta de diseño moderna, funcional y alineada con las necesidades actuales de los usuarios, demostrando mi capacidad para analizar un producto digital e implementar mejoras enfocadas en la experiencia de usuario.' },
       ],
-      previewImage: 'assets/proyectos%20port/netelIp/mockup%201.png',
+      previewImage: 'assets/proyectos%20port/netelIp/Portada%20netelIP.png',
       galleries: [
         {
           label: 'Mockups',
@@ -153,6 +154,7 @@
       ],
     },
     2: {
+      theme: { primary: '#E0592D', secondary: '#1F3A5F' },
       tag: 'Proyecto profesional · Diseño Digital',
       title: 'Proyecto Repsol',
       description: 'Participé durante varios meses en un proyecto para Repsol desarrollando diferentes soluciones de diseño para comunicación digital y marketing. Mi trabajo abarcó diseño web, identidad visual, producción de contenido audiovisual y piezas gráficas, adaptando cada entrega a los lineamientos de la marca y a las necesidades de cada campaña.',
@@ -171,7 +173,7 @@
         { heading: 'Solución', type: 'text', content: 'Desarrollé soluciones visuales para diferentes necesidades de comunicación, garantizando coherencia gráfica entre los distintos canales, optimizando la calidad de los materiales entregados y manteniendo una identidad visual consistente en cada pieza.' },
         { heading: 'Resultado', type: 'text', content: 'Contribuí al desarrollo de múltiples entregables digitales para Repsol, participando en proyectos de diseño web, branding y contenido audiovisual. Esta experiencia fortaleció mi capacidad para trabajar en proyectos corporativos, colaborar con equipos multidisciplinarios y adaptarme a distintos retos de diseño dentro de una misma marca.' },
       ],
-      previewImage: 'assets/proyectos%20port/repsol/imagenEditada1.jpg',
+      previewImage: 'assets/proyectos%20port/repsol/portada%20repsol.png',
       galleries: [
         {
           label: 'Mockups',
@@ -214,6 +216,7 @@
       ],
     },
     3: {
+      theme: { primary: '#3D5AFE', secondary: '#0B1230' },
       tag: 'Proyecto académico · UX Research',
       title: 'Phishing Academy',
       description: 'Phishing Academy es una propuesta de videojuego serio (serious game) diseñada para fortalecer la concienciación en ciberseguridad dentro de las organizaciones. El proyecto consistió en transformar un conjunto de requerimientos funcionales y de negocio en una experiencia interactiva, accesible desde web y dispositivos móviles, donde los empleados aprenden a identificar intentos de phishing mediante retos cortos, retroalimentación inmediata y mecánicas de gamificación.',
@@ -274,7 +277,7 @@
           content: 'Se desarrolló una propuesta completa de experiencia de usuario traduciendo requerimientos de negocio y necesidades de distintos stakeholders en un conjunto coherente de wireframes para una plataforma educativa de ciberseguridad. El proyecto demuestra la capacidad de convertir problemas complejos en soluciones centradas en el usuario, considerando accesibilidad, usabilidad y objetivos organizacionales.',
         },
       ],
-      previewImage: 'assets/proyectos%20port/phishing%20App/phisingapp/mockup2.png',
+      previewImage: 'assets/proyectos%20port/phishing%20App/portada%20phishing.png',
       galleries: [
         {
           label: 'Mockups',
@@ -303,6 +306,7 @@
       ],
     },
     4: {
+      theme: { primary: '#7FA88F', secondary: '#16241C' },
       tag: 'Proyecto académico · UX/UI · Transmedia · AR',
       title: 'Proyecto Niebla',
       description: 'Experiencia transmedia diseñada para sensibilizar sobre la importancia de los páramos andinos mediante una novela gráfica interactiva en la web y un simulador en Realidad Aumentada en aplicación móvil, donde las decisiones del usuario modifican el estado del ecosistema.',
@@ -401,7 +405,7 @@
           ],
         },
       ],
-      previewImage: 'assets/proyectos%20port/Proyecto%20Niebla/mockup%20tablet1.png',
+      previewImage: 'assets/proyectos%20port/Proyecto%20Niebla/portada%20niebla.png',
       galleries: [
         {
           label: 'Mockups',
@@ -434,20 +438,251 @@
       ],
     },
     5: {
-      tag: 'Diseño Editorial',
-      title: 'Nombre del proyecto',
-      description: 'Breve descripción del reto, tu rol y el resultado obtenido.',
-      role: 'Por definir',
-      tools: 'Por definir',
-      previewClass: 'project-card__preview--e',
+      theme: { primary: '#D4A544', secondary: '#0C1B33' },
+      tag: 'Proyecto profesional · UX/UI · Diseño web',
+      title: 'US Legal Group',
+      description: 'Diseño y desarrollo de la experiencia de usuario para el sitio web de US Legal Group, una firma de abogados especializada en procesos migratorios en Estados Unidos, orientado a la comunidad latina.',
+      role: 'UX/UI Design, Arquitectura de información, Diseño responsive, Prototipado',
+      tools: 'Figma, UX/UI Design, Information Architecture, Responsive Design, Prototipado, Diseño Web',
+      sections: [
+        {
+          heading: 'El problema',
+          type: 'text',
+          content: 'Muchas personas que buscan asesoría migratoria enfrentan incertidumbre y estrés durante su proceso. Además, los sitios web de este sector suelen presentar exceso de información, navegación poco intuitiva o falta de claridad sobre los servicios ofrecidos, dificultando que los usuarios encuentren rápidamente la ayuda que necesitan.',
+        },
+        {
+          heading: 'El objetivo',
+          type: 'list',
+          content: [
+            'Generar confianza desde el primer contacto.',
+            'Explicar los servicios legales de forma clara y organizada.',
+            'Facilitar la solicitud de asesorías y consultas.',
+            'Mejorar la navegación para usuarios con diferentes niveles de alfabetización digital.',
+            'Adaptar la experiencia a un público latino residente en Estados Unidos.',
+          ],
+        },
+        {
+          heading: 'Investigación',
+          type: 'list',
+          content: [
+            'Comprensión del público objetivo.',
+            'Análisis de las necesidades del cliente.',
+            'Organización de la información y los servicios legales.',
+            'Definición de la estructura de navegación.',
+          ],
+        },
+        {
+          heading: 'Arquitectura de información',
+          type: 'list',
+          content: [
+            'Inicio.',
+            'Servicios.',
+            'Sobre nosotros.',
+            'Proceso de atención.',
+            'Preguntas frecuentes.',
+            'Contacto.',
+          ],
+        },
+        {
+          heading: 'Diseño UX/UI',
+          type: 'text',
+          content: 'Se desarrolló una interfaz centrada en la confianza y la claridad, utilizando una jerarquía visual que guiara al usuario durante todo el recorrido. Se priorizó: llamadas a la acción visibles, navegación intuitiva, diseño responsive, contenido fácil de comprender e identidad visual profesional.',
+        },
+        {
+          heading: 'Decisiones de diseño',
+          type: 'list',
+          content: [
+            'Transmitir seguridad y profesionalismo mediante una identidad visual sobria.',
+            'Reducir la carga cognitiva organizando la información por secciones.',
+            'Destacar los principales servicios mediante bloques visuales.',
+            'Facilitar el contacto mediante llamadas a la acción estratégicamente ubicadas.',
+            'Garantizar una experiencia consistente en dispositivos móviles y de escritorio.',
+          ],
+        },
+        {
+          heading: 'Funcionalidades principales',
+          type: 'list',
+          content: [
+            'Presentación de servicios migratorios.',
+            'Información sobre la firma y el equipo legal.',
+            'Formularios de contacto.',
+            'Navegación responsive.',
+            'Llamados a la acción para solicitar asesorías.',
+            'Organización clara de la información jurídica.',
+          ],
+        },
+        {
+          heading: 'Resultado',
+          type: 'text',
+          content: 'Se diseñó una página web moderna y orientada a la conversión, facilitando que potenciales clientes comprendieran los servicios ofrecidos y pudieran contactar fácilmente con la firma. La propuesta mejoró la organización del contenido, fortaleció la percepción de confianza y ofreció una experiencia de navegación clara para un público diverso, especialmente la comunidad latina en Estados Unidos.',
+        },
+      ],
+      previewImage: 'assets/proyectos%20port/proyecto%20us%20legal/portada%20legal.png',
+      galleries: [
+        {
+          label: 'Mockups',
+          items: [
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/mockup1.png', alt: 'Mockup de escritorio mostrando la página de inicio de US Legal Group' },
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/mockup2.png', alt: 'Mockup de escritorio mostrando la página de servicios de US Legal Group' },
+          ],
+        },
+        {
+          label: 'Páginas del sitio web',
+          items: [
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/home.png', alt: 'Página de inicio del sitio web de US Legal Group' },
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/servicios.png', alt: 'Página de servicios migratorios de US Legal Group' },
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/sobre%20nosotros.png', alt: 'Página Sobre Nosotros de US Legal Group' },
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/casos.png', alt: 'Página de Casos de Éxito de US Legal Group' },
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/blog.png', alt: 'Página de blog de US Legal Group' },
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/FAQ.png', alt: 'Página de preguntas frecuentes de US Legal Group' },
+            { src: 'assets/proyectos%20port/proyecto%20us%20legal/contacto.png', alt: 'Página de contacto con formulario de solicitud de evaluación de caso' },
+          ],
+        },
+      ],
     },
     6: {
-      tag: 'Desarrollo Web',
-      title: 'Nombre del proyecto',
-      description: 'Breve descripción del reto, tu rol y el resultado obtenido.',
-      role: 'Por definir',
-      tools: 'Por definir',
-      previewClass: 'project-card__preview--f',
+      theme: { primary: '#D43A84', secondary: '#472458' },
+      tag: 'Proyecto académico · Branding · Identidad Visual · Estrategia Digital',
+      title: 'Voltix Energy',
+      description: 'Voltix Energy es una marca conceptual de bebida energética desarrollada para conectar con jóvenes apasionados por el deporte, la actividad física y las tendencias digitales, con una identidad de marca completa y su aplicación en estrategia digital.',
+      role: 'Branding, Identidad Visual, Estrategia Digital, Social Media Design',
+      tools: 'Adobe Illustrator, Adobe Photoshop, Figma, Branding, Diseño Editorial, Social Media Design, Identidad Visual',
+      sections: [
+        {
+          heading: 'El problema',
+          type: 'text',
+          content: 'El mercado de las bebidas energéticas es altamente competitivo y muchas marcas comunican mensajes similares, dificultando la diferenciación y la conexión emocional con el público. El reto era construir una identidad visual moderna y memorable que transmitiera energía, motivación y pasión deportiva, además de generar una presencia digital consistente.',
+        },
+        {
+          heading: 'El objetivo',
+          type: 'list',
+          content: [
+            'Transmitir energía, concentración y motivación.',
+            'Conectar con un público joven y digital.',
+            'Diferenciarse mediante una propuesta visual moderna.',
+            'Mantener coherencia en todos los canales de comunicación.',
+            'Fortalecer el posicionamiento de la marca mediante una estrategia digital.',
+          ],
+        },
+        {
+          heading: 'Investigación',
+          type: 'list',
+          content: [
+            'Definición del público objetivo.',
+            'Análisis del mercado de bebidas energéticas.',
+            'Construcción del concepto de marca.',
+            'Definición del tono visual y comunicativo.',
+          ],
+        },
+        {
+          heading: 'Branding',
+          type: 'list',
+          content: [
+            'Naming.',
+            'Logotipo.',
+            'Isotipo.',
+            'Sistema visual.',
+            'Paleta de color.',
+            'Tipografía.',
+            'Manual de marca.',
+          ],
+        },
+        {
+          heading: 'Estrategia digital',
+          type: 'list',
+          content: [
+            'Identidad para Instagram.',
+            'Diseño del feed.',
+            'Contenido promocional.',
+            'Campaña temática inspirada en el Mundial 2026.',
+            'Aplicaciones gráficas para diferentes soportes.',
+          ],
+        },
+        {
+          heading: 'Decisiones de diseño',
+          type: 'list',
+          content: [
+            'Una identidad visual moderna inspirada en el deporte y la cultura digital.',
+            'Una paleta cromática con predominio del fucsia para mejorar el reconocimiento de marca.',
+            'Un sistema gráfico adaptable a medios digitales y físicos.',
+            'Consistencia visual en redes sociales, merchandising y piezas promocionales.',
+            'Una narrativa de marca centrada en la energía, la pasión y la superación.',
+          ],
+        },
+        {
+          heading: 'Entregables',
+          type: 'list',
+          content: [
+            'Naming de marca.',
+            'Identidad visual.',
+            'Manual de marca.',
+            'Diseño del empaque.',
+            'Edición especial Mundial 2026.',
+            'Perfil y estrategia para Instagram.',
+            'Diseño de feed.',
+            'Merchandising.',
+            'Papelería corporativa.',
+            'Landing Page.',
+            'Video corporativo.',
+            'Video animado.',
+          ],
+        },
+        {
+          heading: 'Resultado',
+          type: 'text',
+          content: 'Se desarrolló una propuesta integral de branding para una bebida energética, construyendo una identidad visual sólida y una estrategia digital coherente que permite a la marca mantener una presencia consistente en diferentes canales y aplicaciones. El proyecto demuestra cómo una identidad bien estructurada puede extenderse desde el diseño del producto hasta la comunicación en redes sociales y materiales promocionales.',
+        },
+      ],
+      previewImage: 'assets/proyectos%20port/voltix/producto.png',
+      galleries: [
+        {
+          label: 'Concepto y producto',
+          items: [
+            { src: 'assets/proyectos%20port/voltix/portada.png', alt: 'Portada de la presentación de Voltix Energy con la lata del producto' },
+            { src: 'assets/proyectos%20port/voltix/producto.png', alt: 'Fotografía de producto de la lata Voltix Energy' },
+          ],
+        },
+        {
+          label: 'Identidad visual · Manual de marca',
+          items: [
+            { src: 'assets/proyectos%20port/voltix/logotipo.png', alt: 'Manual de marca mostrando el logotipo de Voltix Energy y sus versiones de uso' },
+            { src: 'assets/proyectos%20port/voltix/color-tipografia.png', alt: 'Manual de marca mostrando la paleta de color y la tipografía de Voltix Energy' },
+          ],
+        },
+        {
+          label: 'Edición especial Mundial 2026',
+          items: [
+            { src: 'assets/proyectos%20port/voltix/etiqueta-mundial.png', alt: 'Etiqueta de la edición especial Mundial 2026 de Voltix Energy' },
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%203.png', alt: 'Pieza promocional de la edición Mundial 2026 con el trofeo FIFA' },
+          ],
+        },
+        {
+          label: 'Estrategia digital · Instagram',
+          items: [
+            { src: 'assets/proyectos%20port/voltix/perfil-instagram.png', alt: 'Perfil de Instagram @voltixenergy' },
+            { src: 'assets/proyectos%20port/voltix/Voltix_Feed%20Instagram.png', alt: 'Feed de Instagram de Voltix Energy con piezas de campaña' },
+            { src: 'assets/proyectos%20port/voltix/Voltix_Feed%20Instagram%202.png', alt: 'Perfil de Instagram de Voltix Energy con la cuadrícula de posts' },
+          ],
+        },
+        {
+          label: 'Piezas de campaña',
+          items: [
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%202.png', alt: 'Pieza de campaña: mano sosteniendo una lata de Voltix Energy' },
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%207.png', alt: 'Pieza de campaña: futbolista celebrando, Tu pasión, tu energía, tu momento' },
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%208.png', alt: 'Pieza de campaña: skater y futbolista junto a una lata de Voltix Energy' },
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%204.png', alt: 'Pieza de campaña: evento Voltix Run 5K en Bogotá' },
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%205.png', alt: 'Pieza de campaña: No Days Off con atleta femenina' },
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%206.png', alt: 'Pieza de campaña: influencer sosteniendo una lata de Voltix Energy' },
+            { src: 'assets/proyectos%20port/voltix/ig%20feed/Mesa%20de%20trabajo%209.png', alt: 'Fotografía de producto de la lata Voltix Energy sobre fondo negro' },
+          ],
+        },
+        {
+          label: 'Aplicaciones de marca',
+          items: [
+            { src: 'assets/proyectos%20port/voltix/merchandising.png', alt: 'Aplicaciones de marca: camiseta, termo, hoja membreteada, llavero, libreta y gorra de Voltix Energy' },
+          ],
+        },
+      ],
     },
   };
 
@@ -462,17 +697,66 @@
   const modalGalleries = document.getElementById('projectModalGalleries');
   let lastFocusedEl = null;
 
+  const lightbox = document.getElementById('galleryLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  let lastFocusedBeforeLightbox = null;
+
+  const openLightbox = (src, alt) => {
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt;
+    lastFocusedBeforeLightbox = document.activeElement;
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    lightbox.querySelector('.lightbox__close').focus();
+  };
+
+  const closeLightbox = () => {
+    if (!lightbox) return;
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+    if (lastFocusedBeforeLightbox) lastFocusedBeforeLightbox.focus();
+  };
+
+  if (lightbox) {
+    lightbox.querySelectorAll('[data-lightbox-close]').forEach((el) => {
+      el.addEventListener('click', closeLightbox);
+    });
+  }
+
+  const renderChips = (container, value) => {
+    container.innerHTML = '';
+    if (!value) return;
+    value.split(',').forEach((item) => {
+      const chip = document.createElement('span');
+      chip.className = 'project-modal__chip';
+      chip.textContent = item.trim();
+      container.appendChild(chip);
+    });
+  };
+
   const renderSections = (container, sections) => {
     container.innerHTML = '';
     if (!sections || !sections.length) return;
 
-    sections.forEach((section) => {
+    sections.forEach((section, index) => {
       const sectionEl = document.createElement('div');
-      sectionEl.className = 'project-modal__section';
+      sectionEl.className = 'project-modal__section' + (index % 2 === 1 ? ' project-modal__section--tint' : '');
+
+      const headingRow = document.createElement('div');
+      headingRow.className = 'project-modal__section-head';
+
+      const number = document.createElement('span');
+      number.className = 'project-modal__section-index';
+      number.textContent = String(index + 1).padStart(2, '0');
+      headingRow.appendChild(number);
 
       const heading = document.createElement('h4');
       heading.textContent = section.heading;
-      sectionEl.appendChild(heading);
+      headingRow.appendChild(heading);
+
+      sectionEl.appendChild(headingRow);
 
       if (section.type === 'list') {
         const list = document.createElement('ul');
@@ -512,6 +796,7 @@
         img.src = item.src;
         img.alt = item.alt || '';
         img.loading = 'lazy';
+        img.addEventListener('click', () => openLightbox(item.src, item.alt || ''));
         grid.appendChild(img);
       });
       groupEl.appendChild(grid);
@@ -524,19 +809,18 @@
     const data = projectsData[id];
     if (!data || !modal) return;
 
-    if (data.previewImage) {
-      modalPreview.className = 'project-modal__preview';
-      modalPreview.style.backgroundImage = `url("${data.previewImage}")`;
-    } else {
-      modalPreview.className = 'project-modal__preview ' + data.previewClass;
-      modalPreview.style.backgroundImage = '';
+    if (data.theme) {
+      modal.style.setProperty('--proj-primary', data.theme.primary);
+      modal.style.setProperty('--proj-secondary', data.theme.secondary);
     }
+
+    modalPreview.style.backgroundImage = data.previewImage ? `url("${data.previewImage}")` : '';
 
     modalTag.textContent = data.tag;
     modalTitle.textContent = data.title;
     modalDescription.textContent = data.description;
-    modalRole.textContent = data.role;
-    modalTools.textContent = data.tools;
+    renderChips(modalRole, data.role);
+    renderChips(modalTools, data.tools);
 
     renderSections(modalSections, data.sections);
     renderGalleries(modalGalleries, data.galleries);
@@ -563,7 +847,40 @@
     el.addEventListener('click', closeProjectModal);
   });
 
+  // CV modal
+  const cvModal = document.getElementById('cvModal');
+
+  const openCvModal = () => {
+    lastFocusedEl = document.activeElement;
+    cvModal.classList.add('is-open');
+    cvModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+    cvModal.querySelector('.cv-modal__close').focus();
+  };
+
+  const closeCvModal = () => {
+    cvModal.classList.remove('is-open');
+    cvModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('no-scroll');
+    if (lastFocusedEl) lastFocusedEl.focus();
+  };
+
+  document.querySelectorAll('[data-cv-trigger]').forEach((el) => {
+    el.addEventListener('click', openCvModal);
+  });
+
+  document.querySelectorAll('[data-cv-close]').forEach((el) => {
+    el.addEventListener('click', closeCvModal);
+  });
+
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeProjectModal();
+    if (e.key !== 'Escape') return;
+    if (lightbox && lightbox.classList.contains('is-open')) {
+      closeLightbox();
+    } else if (cvModal && cvModal.classList.contains('is-open')) {
+      closeCvModal();
+    } else if (modal.classList.contains('is-open')) {
+      closeProjectModal();
+    }
   });
 })();

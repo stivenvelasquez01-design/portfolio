@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Work+Sans:wght@300;400;500;600&family=Anton&family=Neonderthaw&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=8">
+<link rel="stylesheet" href="css/style.css?v=31">
 </head>
 <body>
 
@@ -17,7 +17,9 @@
 <!-- ===== NAVBAR ===== -->
 <header class="navbar" id="navbar">
   <nav class="navbar__inner" aria-label="Navegación principal">
-    <a href="#top" class="navbar__logo">BV<span>.</span></a>
+    <a href="#top" class="navbar__logo">
+      <img src="assets/logo.png" alt="Brayan Velásquez" class="navbar__logo-img">
+    </a>
 
     <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
       <span></span><span></span><span></span>
@@ -27,6 +29,7 @@
       <li><a href="#about" class="navbar__link">Sobre mí</a></li>
       <li><a href="#skills" class="navbar__link">Habilidades</a></li>
       <li><a href="#projects" class="navbar__link">Proyectos</a></li>
+      <li><button type="button" class="navbar__link" data-cv-trigger>CV</button></li>
       <li><a href="#contact" class="navbar__link">Contacto</a></li>
     </ul>
 
@@ -87,19 +90,17 @@
 
       <div class="about__body">
         <p class="about__text reveal">
-          Soy un diseñador digital en formación, actualmente estudiante de <strong>Ingeniería Multimedia</strong>,
-          apasionado por crear experiencias digitales intuitivas, funcionales y visualmente atractivas.
-          Mi enfoque está en el <strong>diseño UX/UI</strong>, la identidad visual y el diseño de interfaces
-          centradas en el usuario, combinando creatividad, pensamiento estratégico y atención al detalle
-          para transformar ideas en soluciones con impacto.
+          Soy <strong>diseñador</strong> apasionado por crear experiencias digitales que combinan
+          funcionalidad, estética y una visión centrada en el usuario. Disfruto transformar problemas
+          complejos en soluciones simples, intuitivas y visualmente atractivas, aplicando principios de
+          diseño, investigación y estrategia para desarrollar productos digitales con impacto.
         </p>
         <p class="about__text reveal">
-          Además, cuento con conocimientos en <strong>desarrollo web</strong>, integración de contenidos
-          digitales y control de versiones con <strong>Git</strong>, lo que me permite comprender el proceso
-          de creación de productos digitales de forma integral y colaborar eficazmente con equipos
-          multidisciplinarios. Me caracteriza una mentalidad analítica, la curiosidad por aprender
-          continuamente y el compromiso por diseñar experiencias que aporten valor tanto a los usuarios
-          como a las organizaciones.
+          Además, cuento con conocimientos en <strong>desarrollo web</strong> e integración de contenidos
+          digitales, lo que me permite colaborar eficazmente con equipos multidisciplinarios y comprender
+          el ciclo completo de creación de un producto digital. Me caracteriza una mentalidad analítica,
+          la atención al detalle y el aprendizaje continuo, buscando siempre diseñar experiencias que
+          generen valor tanto para los usuarios como para las organizaciones.
         </p>
 
         <ul class="about__traits reveal" aria-label="Rasgos profesionales">
@@ -116,9 +117,9 @@
   <section class="duality" id="skills">
     <div class="section-inner section-inner--wide">
       <p class="section-tag reveal">Habilidades</p>
-      <h2 class="section-title reveal">Dos mundos, un solo flujo de trabajo</h2>
+      <h2 class="section-title reveal">Diseño como eje, tecnología como apoyo</h2>
       <p class="section-subtitle reveal">
-        La misma metodología aplicada a la creación visual y a la construcción técnica.
+        Mi fuerte es el diseño UX/UI y la creación visual; la parte técnica la uso como complemento para entender y dialogar mejor con equipos de desarrollo.
       </p>
     </div>
 
@@ -126,12 +127,16 @@
       <div class="duality__seam" aria-hidden="true"></div>
 
       <div class="duality__side duality__side--design reveal">
-        <span class="duality__badge">01</span>
+        <span class="duality__badge">Enfoque principal</span>
         <h3 class="duality__heading">Diseño Multimedia &amp; UX/UI</h3>
         <ul class="duality__list">
           <li>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v4H4zM4 10h7v10H4zM13 10h7v4h-7zM13 16h7v4h-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
             <span>Diseño UX/UI &amp; prototipado</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span>Investigación de usuarios &amp; UX Research</span>
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17l5-5 4 4 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -149,12 +154,12 @@
       </div>
 
       <div class="duality__bridge reveal" aria-hidden="true">
-        <span>Ingeniero</span>
+        <span>+</span>
       </div>
 
       <div class="duality__side duality__side--tech reveal">
-        <span class="duality__badge">02</span>
-        <h3 class="duality__heading">Integración &amp; Código (Python/Git)</h3>
+        <span class="duality__badge">También sé</span>
+        <h3 class="duality__heading">Nociones técnicas</h3>
         <ul class="duality__list">
           <li>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6L3.5 12 9 18M15 6l5.5 6-5.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -166,14 +171,26 @@
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M7 9.5l2.5 2.5L7 14.5M12.5 14.5h4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Estructuración de activos digitales</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5l7.5 4.3v8.4L12 20.5l-7.5-4.3V7.8L12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 3.5v17M4.5 7.8L12 12l7.5-4.2M4.5 16.2L12 12" stroke="currentColor" stroke-width="1.5"/></svg>
-            <span>Gestión de proyectos técnicos</span>
+            <span>Integración web (HTML &amp; CSS)</span>
           </li>
         </ul>
       </div>
+    </div>
+
+    <div class="duality__tools section-inner section-inner--wide reveal">
+      <p class="duality__tools-heading">Herramientas</p>
+      <ul class="duality__tools-list">
+        <li>Figma</li>
+        <li>Adobe XD</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe After Effects</li>
+        <li>Adobe Premiere Pro</li>
+        <li>Framer</li>
+        <li>ProtoPie</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+      </ul>
     </div>
   </section>
 
@@ -189,81 +206,81 @@
 
     <div class="projects__grid section-inner section-inner--wide">
 
-      <article class="project-card project-card--tall reveal" data-project="1">
-        <div class="project-card__preview project-card__preview--image project-card__preview--netelip"></div>
+      <article class="project-card reveal" data-project="1">
         <div class="project-card__body">
           <span class="project-card__tag">Prueba técnica · Rediseño UX/UI</span>
           <h3>Rediseño UX/UI de Netelip</h3>
-          <p>Modernización de la interfaz y la experiencia de usuario de una plataforma de telefonía IP, con una identidad visual renovada.</p>
-          <button class="project-card__cta" type="button" data-project-trigger="1">
-            Ver proyecto
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <div class="project-card__footer">
+            <p>Modernización de la interfaz y la experiencia de usuario de una plataforma de telefonía IP, con una identidad visual renovada.</p>
+            <button class="project-card__cta" type="button" data-project-trigger="1" aria-label="Ver proyecto Netelip">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
       </article>
 
       <article class="project-card reveal" data-project="2">
-        <div class="project-card__preview project-card__preview--image project-card__preview--repsol"></div>
         <div class="project-card__body">
           <span class="project-card__tag">Proyecto profesional · Diseño Digital</span>
           <h3>Proyecto Repsol</h3>
-          <p>Diseño web, identidad visual, contenido audiovisual y piezas gráficas para las campañas digitales de Repsol.</p>
-          <button class="project-card__cta" type="button" data-project-trigger="2">
-            Ver proyecto
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <div class="project-card__footer">
+            <p>Diseño web, identidad visual, contenido audiovisual y piezas gráficas para las campañas digitales de Repsol.</p>
+            <button class="project-card__cta" type="button" data-project-trigger="2" aria-label="Ver proyecto Repsol">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
       </article>
 
       <article class="project-card reveal" data-project="3">
-        <div class="project-card__preview project-card__preview--image project-card__preview--phishing"></div>
         <div class="project-card__body">
           <span class="project-card__tag">Proyecto académico · UX Research</span>
           <h3>Phishing Academy</h3>
-          <p>Diseño UX de un videojuego serio para fortalecer la concienciación en ciberseguridad mediante retos de phishing gamificados.</p>
-          <button class="project-card__cta" type="button" data-project-trigger="3">
-            Ver proyecto
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <div class="project-card__footer">
+            <p>Diseño UX de un videojuego serio para fortalecer la concienciación en ciberseguridad mediante retos de phishing gamificados.</p>
+            <button class="project-card__cta" type="button" data-project-trigger="3" aria-label="Ver proyecto Phishing Academy">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
       </article>
 
-      <article class="project-card project-card--tall reveal" data-project="4">
-        <div class="project-card__preview project-card__preview--image project-card__preview--niebla"></div>
+      <article class="project-card reveal" data-project="4">
         <div class="project-card__body">
           <span class="project-card__tag">Proyecto académico · UX/UI · Transmedia · AR</span>
           <h3>Proyecto Niebla</h3>
-          <p>Experiencia transmedia que combina una novela gráfica interactiva y un simulador en Realidad Aumentada para sensibilizar sobre la conservación de los páramos andinos.</p>
-          <button class="project-card__cta" type="button" data-project-trigger="4">
-            Ver proyecto
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <div class="project-card__footer">
+            <p>Experiencia transmedia que combina una novela gráfica interactiva y un simulador en Realidad Aumentada para sensibilizar sobre la conservación de los páramos andinos.</p>
+            <button class="project-card__cta" type="button" data-project-trigger="4" aria-label="Ver proyecto Niebla">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
       </article>
 
       <article class="project-card reveal" data-project="5">
-        <div class="project-card__preview project-card__preview--e"></div>
         <div class="project-card__body">
-          <span class="project-card__tag">Diseño Editorial</span>
-          <h3>Nombre del proyecto</h3>
-          <p>Breve descripción del reto, tu rol y el resultado obtenido.</p>
-          <button class="project-card__cta" type="button" data-project-trigger="5">
-            Ver proyecto
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <span class="project-card__tag">Proyecto profesional · UX/UI · Diseño web</span>
+          <h3>US Legal Group</h3>
+          <div class="project-card__footer">
+            <p>Diseño de la experiencia de usuario para el sitio web de una firma de abogados especializada en procesos migratorios, orientado a generar confianza en la comunidad latina en Estados Unidos.</p>
+            <button class="project-card__cta" type="button" data-project-trigger="5" aria-label="Ver proyecto US Legal Group">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
       </article>
 
       <article class="project-card reveal" data-project="6">
-        <div class="project-card__preview project-card__preview--f"></div>
         <div class="project-card__body">
-          <span class="project-card__tag">Desarrollo Web</span>
-          <h3>Nombre del proyecto</h3>
-          <p>Breve descripción del reto, tu rol y el resultado obtenido.</p>
-          <button class="project-card__cta" type="button" data-project-trigger="6">
-            Ver proyecto
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+          <span class="project-card__tag">Proyecto académico · Branding · Identidad Visual</span>
+          <h3>Voltix Energy</h3>
+          <div class="project-card__footer">
+            <p>Identidad de marca completa para una bebida energética conceptual, desde la estrategia y el naming hasta el diseño visual y su estrategia digital en Instagram.</p>
+            <button class="project-card__cta" type="button" data-project-trigger="6" aria-label="Ver proyecto Voltix Energy">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
       </article>
 
@@ -288,17 +305,47 @@
         <dl class="project-modal__meta">
           <div class="project-modal__meta-item">
             <dt>Rol</dt>
-            <dd id="projectModalRole"></dd>
+            <dd class="project-modal__chips" id="projectModalRole"></dd>
           </div>
           <div class="project-modal__meta-item">
             <dt>Herramientas</dt>
-            <dd id="projectModalTools"></dd>
+            <dd class="project-modal__chips" id="projectModalTools"></dd>
           </div>
         </dl>
 
         <div class="project-modal__sections" id="projectModalSections"></div>
 
         <div class="project-modal__galleries" id="projectModalGalleries"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GALLERY LIGHTBOX ===== -->
+  <div class="lightbox" id="galleryLightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <button class="lightbox__close" type="button" data-lightbox-close aria-label="Cerrar imagen">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <img class="lightbox__image" id="lightboxImage" src="" alt="">
+  </div>
+
+  <!-- ===== CV MODAL ===== -->
+  <div class="cv-modal" id="cvModal" aria-hidden="true">
+    <div class="cv-modal__backdrop" data-cv-close></div>
+    <div class="cv-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+      <button class="cv-modal__close" type="button" data-cv-close aria-label="Cerrar CV">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="cv-modal__header">
+        <h2 class="cv-modal__title" id="cvModalTitle">Mi CV en formato ATS</h2>
+        <a href="assets/CV_Brayan_Velasquez_ATS.pdf" class="btn btn--outline cv-modal__download" download>Descargar CV</a>
+      </div>
+
+      <div class="cv-modal__viewer">
+        <iframe src="assets/CV_Brayan_Velasquez_ATS.pdf" title="CV de Brayan Velásquez en formato ATS" loading="lazy">
+          Tu navegador no puede mostrar el PDF. <a href="assets/CV_Brayan_Velasquez_ATS.pdf">Descárgalo aquí</a>.
+        </iframe>
       </div>
     </div>
   </div>
@@ -316,7 +363,15 @@
         stivenvelasquez01@gmail.com
       </a>
 
+      <a href="https://wa.me/573223436282" class="contact__whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.2A8.5 8.5 0 1 0 12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.7 8.4c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.2.3-.3.5-.2.2-.3.3-.1.6.2.4.9 1.4 1.9 2.3 1.3 1.1 2.2 1.5 2.5 1.6.3.1.5.1.6-.1.2-.2.7-.8.9-1 .2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.2.1 1-.2 1.5-.3.6-1.6 1.1-2.2 1.1-.6 0-1.3.1-4-1s-4.3-3.3-4.7-3.9c-.4-.5-1.2-1.7-1.2-3.2s.8-2.3 1-2.5z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        +57 322 343 6282
+      </a>
+
       <div class="contact__socials">
+        <a href="https://wa.me/573223436282" class="contact__social" aria-label="WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.2A8.5 8.5 0 1 0 12 3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.7 8.4c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.6.7 1.7.1.1.1.3 0 .4-.1.2-.2.3-.3.5-.2.2-.3.3-.1.6.2.4.9 1.4 1.9 2.3 1.3 1.1 2.2 1.5 2.5 1.6.3.1.5.1.6-.1.2-.2.7-.8.9-1 .2-.2.3-.2.6-.1l1.6.8c.2.1.4.2.4.3.1.2.1 1-.2 1.5-.3.6-1.6 1.1-2.2 1.1-.6 0-1.3.1-4-1s-4.3-3.3-4.7-3.9c-.4-.5-1.2-1.7-1.2-3.2s.8-2.3 1-2.5z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
         <a href="#" class="contact__social" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 10v6.5M7.5 7.5v.01M11.5 16.5V13c0-1.4 1-2.5 2.3-2.5S16 11.6 16 13v3.5M11.5 10v6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
@@ -339,6 +394,6 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=8"></script>
+<script src="js/script.js?v=19"></script>
 </body>
 </html>
